@@ -1,0 +1,69 @@
+api/
+├── .git/
+├── .gitattributes
+├── .gitignore
+├── .mvn/
+├── .vscode/
+├── mvnw
+├── mvnw.cmd
+├── pom.xml
+├── project-structure.txt
+├── src/
+│   ├── main/
+│   │   ├── java/
+│   │   │   └── com/
+│   │   │       └── hukapp/
+│   │   │           └── api/
+│   │   │               ├── ApiApplication.java
+│   │   │               ├── common/
+│   │   │               │   ├── converter/
+│   │   │               │   │   └── StringEncryptionConverter.java
+│   │   │               │   ├── dto/
+│   │   │               │   │   ├── request/
+│   │   │               │   │   └── response/
+│   │   │               │   ├── entity/
+│   │   │               │   │   └── BaseEntity.java
+│   │   │               │   └── util/
+│   │   │               │       └── EncryptionUtil.java
+│   │   │               ├── config/
+│   │   │               │   ├── DatabaseProperties.java
+│   │   │               │   ├── SecurityConfig.java
+│   │   │               │   ├── JpaAuditingConfig.java
+│   │   │               │   └── WebConfig.java
+│   │   │               └── modules/
+│   │   │                   ├── examplem/
+│   │   │                   │   ├── controller/
+│   │   │                   │   ├── dto/
+│   │   │                   │   │   ├── request/
+│   │   │                   │   │   └── response/
+│   │   │                   │   ├── entity/
+│   │   │                   │   ├── mapper/
+│   │   │                   │   ├── repository/
+│   │   │                   │   └── service/
+│   │   │                   │       └── impl/
+│   │   │                   │       └── ExampleServiceInterface.java
+│   │   │                   ├── person/
+│   │   │                   │   ├── controller/
+│   │   │                   │   ├── dto/
+│   │   │                   │   │   ├── request/
+│   │   │                   │   │   └── response/
+│   │   │                   │   ├── entity/
+│   │   │                   │   ├── mapper/
+│   │   │                   │   ├── repository/
+│   │   │                   │   └── service/
+│   │   │                   │       ├── impl/
+│   │   │                   │       └── PersonServiceInterface.java
+│   │   └── resources/
+│   │       ├── META-INF/
+│   │       │   └── additional-spring-configuration-metadata.json
+│   │       └── application.yml
+│   └── test/
+│       └── java/
+│           └── com/
+│               └── hukapp/
+│                   └── api/
+│                       ├── ApiApplicationTests.java
+│                       ├── common/
+│                       │   └── util/
+│                       └── modules/
+│                           └── person/

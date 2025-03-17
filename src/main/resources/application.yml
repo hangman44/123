@@ -1,0 +1,39 @@
+app:
+  environment: dev
+spring:
+  application:
+    name: hukapp-auth-service
+  security:
+    user:
+      name: hukapp  # TODO: Implement JWT Authentication
+      password: Huk-app.41@ # TODO: Implement JWT Authentication
+  datasource:
+    url: jdbc:postgresql://193.35.154.97:5432/hukappdb
+    username: postgres  # TODO: Store in a secure place as encrypted
+    password: Huk-app.41@ # TODO: Store in a secure place as encrypted
+    driver-class-name: org.postgresql.Driver
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+server:
+  port: 4244
+  error:
+    whitelabel:
+      enabled: false
+    include-stacktrace: never
+    include-message: never
+logging:
+  level:
+    "[org.springframework]": ERROR
+    "[com.hukapp]": DEBUG
+springdoc:
+  api-docs:
+    version: OPENAPI_3_0
+    enabled: true
+rsa:
+  public-key: classpath:jwtresource/public.pem
+  private-key: classpath:jwtresource/private.pem
